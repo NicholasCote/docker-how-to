@@ -13,7 +13,3 @@ def home():
 @app.route('/templates/navbar.html')
 def navbar():
     return render_template('navbar.html')
-
-# Create the main driver function to run the app
-if __name__ == '__main__':
-    app.run(host="0.0.0.0")
