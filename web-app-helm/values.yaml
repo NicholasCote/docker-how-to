@@ -1,0 +1,14 @@
+replicaCount: 1
+
+webapp:
+  name: ncote-how-to
+  group: ncote-how-to
+  path: /
+  tls:
+    fqdn: ncote-how-to.k8s.ucar.edu
+    secretName: incommon-cert-ncote-how-to
+  container: 
+    image: hub.k8s.ucar.edu/docker/ncote/docker-example:2024-02-13.16
+    port: 5000
+    memory: 1G
+    cpu: 2
